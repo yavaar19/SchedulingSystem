@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schedulingsystem.ModifyPatientController">
+   <children>
+      <HBox alignment="CENTER" layoutX="-7.0" layoutY="51.0" prefHeight="362.0" prefWidth="519.0" AnchorPane.bottomAnchor="153.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="362.0" prefWidth="406.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="114.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="239.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="ModifyPatientPatientIdTxtLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Customer ID">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyPatientUserIdLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="170.0" text="User ID" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyPatientPatientNameLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Customer  Name" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyPatientAddressLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Address" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyPatientDivisionLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Division" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyPatientCountryLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Country" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyPatientPostalCodeLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Postal Code" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyPatientPhoneLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Phone Number" GridPane.rowIndex="8">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ModifyPatientPatientIdTxtField" alignment="CENTER" disable="true" promptText="AUTO GEN" GridPane.columnIndex="1" />
+                  <TextField fx:id="ModifyPatientUserIdTxtField" alignment="CENTER" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="ModifyPatientAddressTxtField" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="ModifyPatientPhoneNumberTxtField" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField fx:id="ModifyPatientPatientNameTxtField" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="ModifyPatientDivisionCombo" onAction="#ModifyPatientDivisionCombo" prefHeight="26.0" prefWidth="251.0" promptText="Select Division" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="ModifyPatientPostalcodeTxtField1" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <ComboBox fx:id="ModifyPatientrCountryCombo" onAction="#ModifyPatientCountryCombo" prefHeight="26.0" prefWidth="251.0" promptText="Select Country" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label fx:id="ModifyPatientCityLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="City" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ModifyPatientCityTxtField" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <Label fx:id="ModifyPatientLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="117.0" layoutY="14.0" text="Modify Customer" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="115.5">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="106.0" layoutY="498.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="498.0">
+         <children>
+            <GridPane alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="ModifyPatientSaveBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ModifyPatientSaveBtn" prefHeight="35.0" prefWidth="88.0" text="Save" />
+                  <Button fx:id="ModifyPatientCloseBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ModifyPatientCloseBtn" prefHeight="35.0" prefWidth="88.0" text="Close" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

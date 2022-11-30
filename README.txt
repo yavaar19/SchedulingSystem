@@ -1,0 +1,6 @@
+- Scheduling System: The purpose of the application is to provide an organization with the ability to schedule and document client's appointments and schedules!
+- Yavaar Nosimohomed, ynosimo@wgu.edu, Version 1.0, June-5-2022
+- IntelliJ IDEA 2021.1.3 (Community Edition), Java jdk-17.0.1, javafx-sdk-17.0.1
+- Once project is open, run the main method called MainApplication. For log in credentials, please used username: admin and password: admin. Password is case sensitive!
+- The additional report of my choice is called the User Appointment Report! The report basically shows all the user names with their total number of appointments by Month!
+- mysql-connector-java-8.0.25

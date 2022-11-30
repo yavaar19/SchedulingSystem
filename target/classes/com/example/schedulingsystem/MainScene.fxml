@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="621.0" prefWidth="913.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schedulingsystem.MainSceneController">
+   <children>
+      <Label fx:id="MainSceneSchedulingSystemLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="360.0" layoutY="14.0" text="Scheduling System">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="MainSceneAppointmentsLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="403.0" layoutY="52.0" text="Appointments">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="MainSceneAppointmentsTV" layoutX="23.0" layoutY="83.0" prefHeight="147.0" prefWidth="867.0">
+        <columns>
+          <TableColumn fx:id="AppointmentsTVAppointmentIdClm" prefWidth="99.0" text="Appointment ID" />
+          <TableColumn fx:id="AppointmentsTVUserIdClm" prefWidth="68.0" text="User ID" />
+            <TableColumn fx:id="AppointmentsTVPatientIdClm" prefWidth="89.0" text="Customer ID" />
+            <TableColumn fx:id="AppointmentTVTitleClm" prefWidth="138.0" text="Title" />
+            <TableColumn fx:id="AppointmentsTVMethodClm" prefWidth="135.0" text="Appointment Method" />
+            <TableColumn fx:id="AppointmentsTVStartClm" prefWidth="170.0" text="Start" />
+            <TableColumn fx:id="AppointmentsTVEndClm" prefWidth="170.0" text="End" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="170.0" layoutY="230.0" prefHeight="59.0" prefWidth="574.0">
+         <children>
+            <GridPane prefHeight="58.0" prefWidth="574.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="MainSceneAddAppointmentBtn" mnemonicParsing="false" onAction="#MainSceneAddAppointmentBtn" prefHeight="40.0" prefWidth="111.0" text="Add" />
+                  <Button fx:id="MainSceneModifyAppointmentsBtn" mnemonicParsing="false" onAction="#MainSceneModifyAppointmentsBtn" prefHeight="40.0" prefWidth="111.0" text="Modify" GridPane.columnIndex="1" />
+                  <Button fx:id="MainSceneDeleteAppointmentBtn" mnemonicParsing="false" onAction="#MainSceneDeleteAppointmentBtn" prefHeight="40.0" prefWidth="111.0" text="Delete" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <Label fx:id="MainScenePatientLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="290.0" layoutY="299.0" text="Customers">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="MainScenePatientsTV" layoutX="123.0" layoutY="324.0" prefHeight="175.0" prefWidth="418.0">
+        <columns>
+          <TableColumn fx:id="PatientsTVPatientIdClm" prefWidth="132.0" text="Customer ID" />
+          <TableColumn fx:id="PatientsTVPatientNameClm" prefWidth="131.0" text="Customer Name" />
+            <TableColumn fx:id="PatientsTVDivisionIdClm" prefWidth="153.0" text="Division ID" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="162.0" layoutY="511.0" prefHeight="59.0" prefWidth="341.0">
+         <children>
+            <GridPane prefHeight="58.0" prefWidth="574.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="MainSceneAddPatientsBtn" mnemonicParsing="false" onAction="#MainSceneAddPatientsBtn" prefHeight="40.0" prefWidth="111.0" text="Add" />
+                  <Button fx:id="MainSceneModifyPatientsBtn" mnemonicParsing="false" onAction="#MainSceneModifyPatientsBtn" prefHeight="40.0" prefWidth="111.0" text="Modify" GridPane.columnIndex="1" />
+                  <Button fx:id="MainSceneDeletePatientsBtn" mnemonicParsing="false" onAction="#MainSceneDeletePatientsBtn" prefHeight="40.0" prefWidth="111.0" text="Delete" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER_RIGHT" layoutX="589.0" layoutY="299.0" prefHeight="251.0" prefWidth="300.0">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="246.0" prefWidth="293.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="MainSceneAppointmentTypesReportBtn" mnemonicParsing="false" onAction="#MainSceneAppointmentTypesBtn" prefHeight="40.0" prefWidth="300.0" text="Appointment Types Report" GridPane.rowIndex="1" />
+                  <Button fx:id="MainSceneViewAppointmentsBtn" mnemonicParsing="false" onAction="#MainSceneViewAppointmentsBtn" prefHeight="40.0" prefWidth="300.0" text="View Appointments" />
+                  <Button fx:id="MainSceneContactScheduleReportBtn" mnemonicParsing="false" onAction="#MainSceneContactScheduleReportBtn" prefHeight="40.0" prefWidth="300.0" text="Contact Schedule Report" GridPane.rowIndex="2" />
+                  <Button fx:id="MainSceneLogOutBtn" mnemonicParsing="false" onAction="#MainSceneLogOutBtn" prefHeight="40.0" prefWidth="300.0" text="Log Out" GridPane.rowIndex="4" />
+                  <Button fx:id="MainSceneUserAppointmentsReportBtn" mnemonicParsing="false" onAction="#MainSceneUserAppointmentsReportBtn" prefHeight="40.0" prefWidth="300.0" text="User Appointments Report" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <TextField fx:id="AppointmentSearch" layoutX="739.0" layoutY="53.0" promptText="Search Keywords" />
+      <TextField fx:id="PatientSearch" layoutX="392.0" layoutY="298.0" promptText="Search Keywords" />
+   </children>
+</AnchorPane>

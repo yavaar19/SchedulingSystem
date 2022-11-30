@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="463.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schedulingsystem.UserAppointmentsReportController">
+   <children>
+      <Label fx:id="UserAppointmentsReportLabel" alignment="CENTER" layoutX="109.0" layoutY="27.0" prefHeight="23.0" prefWidth="436.0" text="USER APPOINTMENTS REPORT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="32.0" layoutY="68.0" prefHeight="305.0" prefWidth="368.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="104.33" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="104.33" />
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="104.33" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="73.25" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="73.25" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="73.25" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="73.25" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <RadioButton fx:id="JanRadioBtn" mnemonicParsing="false" onAction="#JanRadioBtn" text="JANUARY">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="RadioBtn" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="FebRadioBtn" mnemonicParsing="false" onAction="#FebRadioBtn" text="FEBRUARY" toggleGroup="$RadioBtn" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="MarRadioBtn" mnemonicParsing="false" onAction="#MarRadioBtn" text="MARCH" toggleGroup="$RadioBtn" GridPane.columnIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="AprilRadioBtn" mnemonicParsing="false" onAction="#AprilRadioBtn" text="APRIL" toggleGroup="$RadioBtn" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="MayRadioBtn" mnemonicParsing="false" onAction="#MayRadioBtn" selected="true" text="MAY" toggleGroup="$RadioBtn" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="JuneRadioBtn" mnemonicParsing="false" onAction="#JuneRadioBtn" text="JUNE" toggleGroup="$RadioBtn" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="JulyRadioBtn" mnemonicParsing="false" onAction="#JulyRadioBtn" text="JULY" toggleGroup="$RadioBtn" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="AugRadioBtn" mnemonicParsing="false" onAction="#AugRadioBtn" text="AUGUST" toggleGroup="$RadioBtn" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="SeptRadioBtn" mnemonicParsing="false" onAction="#SepRadioBtn" text="SEPTEMBER" toggleGroup="$RadioBtn" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="OctRadioBtn" mnemonicParsing="false" onAction="#OctRadioBtn" text="OCTOBER" toggleGroup="$RadioBtn" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="NovRadioBtn" mnemonicParsing="false" onAction="#NovRadioBtn" text="NOVEMBER" toggleGroup="$RadioBtn" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="DecRadioBtn" mnemonicParsing="false" onAction="#DecRadioBtn" text="DECEMBER" toggleGroup="$RadioBtn" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </GridPane>
+      <TableView fx:id="UserAppointmentsReportTV" layoutX="430.0" layoutY="68.0" prefHeight="305.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="UserClm" prefWidth="100.0" text="User" />
+          <TableColumn fx:id="CountClm" prefWidth="100.0" text="Count" />
+        </columns>
+      </TableView>
+      <Button fx:id="UserAppointmentsReportCloseBtn" layoutX="479.0" layoutY="391.0" mnemonicParsing="false" onAction="#UserAppointmentsReportCloseBtn" prefHeight="45.0" prefWidth="102.0" text="Close">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

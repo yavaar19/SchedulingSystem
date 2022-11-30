@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SchedulingSystem" target="18" />
+      <module name="SchedulingSystem" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>

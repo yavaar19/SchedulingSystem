@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.example.schedulingsystem","l":"Class"},{"m":"com.example.schedulingsystem","l":"com.example.schedulingsystem"},{"m":"com.example.schedulingsystem","l":"Database"}];updateSearchResults();

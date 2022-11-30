@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schedulingsystem.ModifyAppointmentController">
+   <children>
+      <HBox alignment="CENTER" layoutX="-25.0" layoutY="51.0" prefHeight="362.0" prefWidth="555.0" AnchorPane.bottomAnchor="153.0" AnchorPane.leftAnchor="-25.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="51.0">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="362.0" prefWidth="488.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="194.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="245.0" minWidth="10.0" prefWidth="232.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="ModifyAppointmentAppointmentIdLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="193.0" text="Appointment ID">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyAppointmentUserIdLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="167.0" text="User ID" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyAppointmentPatientIdLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Customer ID" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyAppointmentTitleLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Title" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyAppointmentDescriptionLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Description" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyAppointmentContactIdLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Contact ID" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyAppointmentTypeLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Type" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyAppointmentDateLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Date" GridPane.rowIndex="8">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ModifyAppointmentAppointmentIdTxtField" alignment="CENTER" disable="true" promptText="AUTO GEN" GridPane.columnIndex="1" />
+                  <TextField fx:id="ModifyAppointmentUserIdTxtField" alignment="CENTER" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="ModifyAppointmentTitleTxtField" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="ModifyAppointmentDescriptionTxtField" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="ModifyAppointmentTypeTxtField" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <DatePicker fx:id="ModifyAppointmentDateDatePicker" prefHeight="26.0" prefWidth="243.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <ComboBox fx:id="ModifyAppointmentContactIdCombo" prefHeight="26.0" prefWidth="251.0" promptText="Select Contact" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="ModifyAppointmentPatientIdCombo" prefHeight="26.0" prefWidth="251.0" promptText="Select Customer" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="ModifyAppointmentMethodLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="174.0" text="Appointment Method" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="ModifyAppointmentMethodCombo" prefHeight="26.0" prefWidth="251.0" promptText="Select Method" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <Label fx:id="ModifyAppointmentAppointmentLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="117.0" layoutY="14.0" text="Modify Appointment" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="115.5">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="-7.0" layoutY="413.0" prefHeight="85.0" prefWidth="519.0" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="413.0">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="85.0" prefWidth="441.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="171.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="81.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="122.0" minWidth="0.0" prefWidth="96.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="93.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="ModifyAppointmentStartTimeLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="Start Time">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ModifyAppointmentEndTimeLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="151.0" text="End Time" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="ModifyAppointmentStartHourCombo" prefHeight="26.0" prefWidth="77.0" promptText="Hour" GridPane.columnIndex="1" />
+                  <ComboBox fx:id="ModifyAppointmentStartMinuteCombo" prefHeight="26.0" prefWidth="86.0" promptText="Minute" GridPane.columnIndex="2" />
+                  <ComboBox fx:id="ModifyAppointmentStartPeriodCombo" prefHeight="26.0" prefWidth="87.0" promptText="AM/PM" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" />
+                  <ComboBox fx:id="ModifyAppointmentEndHourCombo" prefHeight="26.0" prefWidth="77.0" promptText="Hour" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="ModifyAppointmentEndMinuteCombo" prefHeight="26.0" prefWidth="86.0" promptText="Minute" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="ModifyAppointmentEndPeriodCombo" prefHeight="26.0" prefWidth="88.0" promptText="AM/PM" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="106.0" layoutY="498.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="498.0">
+         <children>
+            <GridPane alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="ModifyAppointmentSaveBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ModifyAppointmentSaveBtn" prefHeight="35.0" prefWidth="88.0" text="Save" />
+                  <Button fx:id="ModifyAppointmentCloseBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ModifyAppointmentCloseBtn" prefHeight="35.0" prefWidth="88.0" text="Close" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
